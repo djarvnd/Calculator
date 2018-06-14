@@ -4,7 +4,7 @@
 
   <groupId>com.ravi.cal</groupId>
   <artifactId>RaviCalculator</artifactId>
-  <version>1.0.1-SNAPSHOT</version>
+  <version>1.0.1</version>
   <packaging>jar</packaging>
 
   <name>RaviCalculator</name>
@@ -38,5 +38,17 @@
      </plugin>
 </plugins>
 </build>
+
+<distributionManagement>
+  <repository>
+    <id>releaserepo</id>
+    <url>http://172.22.23.113:8081/nexus/content/repositories/releaserepo</url>
+  </repository>
+  <snapshotRepository>
+    <id>snaprepo</id>
+    <url>http://172.22.23.113:8081/nexus/content/repositories/snaprepo</url>
+  </snapshotRepository>
+</distributionManagement>
+
 </project>
 
